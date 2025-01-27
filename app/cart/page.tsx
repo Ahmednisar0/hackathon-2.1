@@ -78,7 +78,7 @@ const Index = () => {
 
   const applyPromoCode = () => {
     const subtotal = calculateSubtotal();
-    if (promoCode === "MUSKAN") { // promo code "MUSKAN"
+    if (promoCode === "shop.co") { // promo code "MUSKAN"
       const discountAmount = subtotal * 0.1; // Calculate 10% discount
       setDiscount(discountAmount);
       setIsPromoApplied(true); // Mark promo as applied
@@ -201,7 +201,7 @@ const Index = () => {
                     type="text"
                     value={promoCode}
                     onChange={(e) => setPromoCode(e.target.value)}
-                    placeholder="Enter promo code MUSKAN"
+                    placeholder="Enter promo code shop.co"
                     className="border border-neutral-300 rounded-md p-2 w-full"
                   />
                   <button
